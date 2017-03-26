@@ -1,6 +1,6 @@
 {
   "name": "serverless-proxy",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "author": "Dan Turner <dan.p.turner@gmail.com>",
   "license": "MIT",
   "main": "index.js",
