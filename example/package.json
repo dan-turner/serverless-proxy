@@ -1,0 +1,36 @@
+{
+  "name": "example-api",
+  "version": "0.6.2",
+  "author": "Dan Turner <dan.p.turner@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "description": "An example Koa API utilising serverless-proxy configured with Webpack + Babel",
+  "homepage": "https://github.com/dan-turner/serverless-proxy/tree/master/example",
+  "bugs": {
+    "url": "https://github.com/dan-turner/serverless-proxy/issues"
+  },
+  "keywords": [
+    "serverless-proxy",
+    "koa",
+    "example"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.2.2",
+    "serverless-webpack": "^1.0.0-rc.4",
+    "webpack": "^2.3.2",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "koa": "^2.2.0",
+    "koa-router": "^7.0.1",
+    "serverless-proxy": "^0.6.2"
+  }
+}

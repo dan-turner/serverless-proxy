@@ -1,0 +1,25 @@
+service: example-api
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpackIncludeModules: true # enable auto including modules
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+  stage: dev
+  region: ap-southeast-2
+
+functions:
+  proxy:
+    handler: handler.proxy
+    events:
+      - http:
+          method: ANY
+          path: "{proxy+}"
+      - http:
+          method: ANY
+          path: "/"

@@ -1,118 +1,30 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/dan/.nvm/versions/node/v6.5.0/bin/node',
 1 verbose cli   '/Users/dan/.nvm/versions/node/v6.5.0/bin/npm',
-1 verbose cli   'unpublish',
-1 verbose cli   'aws-lambda-proxy@0.5.0' ]
+1 verbose cli   'version',
+1 verbose cli   'patch' ]
 2 info using npm@3.10.3
 3 info using node@v6.5.0
-4 silly unpublish args[0] aws-lambda-proxy@0.5.0
-5 silly unpublish thing Result {
-5 silly unpublish   raw: 'aws-lambda-proxy@0.5.0',
-5 silly unpublish   scope: null,
-5 silly unpublish   escapedName: 'aws-lambda-proxy',
-5 silly unpublish   name: 'aws-lambda-proxy',
-5 silly unpublish   rawSpec: '0.5.0',
-5 silly unpublish   spec: '0.5.0',
-5 silly unpublish   type: 'version' }
-6 verbose getPublishConfig null
-7 silly ls normalized aws-lambda-proxy/0.5.0
-8 silly gentlyRm /Users/dan/.npm/aws-lambda-proxy/0.5.0 is being purged
-9 verbose gentlyRm don't care about contents; nuking /Users/dan/.npm/aws-lambda-proxy/0.5.0
-10 silly mapToRegistry name aws-lambda-proxy
-11 silly mapToRegistry using default registry
-12 silly mapToRegistry registry https://registry.npmjs.org/
-13 silly mapToRegistry data Result {
-13 silly mapToRegistry   raw: 'aws-lambda-proxy',
-13 silly mapToRegistry   scope: null,
-13 silly mapToRegistry   escapedName: 'aws-lambda-proxy',
-13 silly mapToRegistry   name: 'aws-lambda-proxy',
-13 silly mapToRegistry   rawSpec: '',
-13 silly mapToRegistry   spec: 'latest',
-13 silly mapToRegistry   type: 'tag' }
-14 silly mapToRegistry uri https://registry.npmjs.org/aws-lambda-proxy
-15 verbose get GET as part of write; not caching result
-16 verbose request uri https://registry.npmjs.org/aws-lambda-proxy?write=true
-17 verbose request no auth needed
-18 info attempt registry request try #1 at 10:43:10 PM
-19 verbose request using bearer token for auth
-20 verbose request id 1837128744ceb31b
-21 http request GET https://registry.npmjs.org/aws-lambda-proxy?write=true
-22 http 200 https://registry.npmjs.org/aws-lambda-proxy?write=true
-23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-23 verbose headers   'content-type': 'application/json',
-23 verbose headers   etag: '"58d7a914-a44"',
-23 verbose headers   'content-encoding': 'gzip',
-23 verbose headers   'cache-control': 'max-age=0',
-23 verbose headers   'transfer-encoding': 'chunked',
-23 verbose headers   'accept-ranges': 'bytes',
-23 verbose headers   date: 'Sun, 26 Mar 2017 11:43:11 GMT',
-23 verbose headers   via: '1.1 varnish',
-23 verbose headers   connection: 'keep-alive',
-23 verbose headers   'x-served-by': 'cache-syd1620-SYD',
-23 verbose headers   'x-cache': 'MISS',
-23 verbose headers   'x-cache-hits': '0',
-23 verbose headers   'x-timer': 'S1490528590.319835,VS0,VE683',
-23 verbose headers   vary: 'Accept-Encoding' }
-24 silly get cb [ 200,
-24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-24 silly get     'content-type': 'application/json',
-24 silly get     etag: '"58d7a914-a44"',
-24 silly get     'content-encoding': 'gzip',
-24 silly get     'cache-control': 'max-age=0',
-24 silly get     'transfer-encoding': 'chunked',
-24 silly get     'accept-ranges': 'bytes',
-24 silly get     date: 'Sun, 26 Mar 2017 11:43:11 GMT',
-24 silly get     via: '1.1 varnish',
-24 silly get     connection: 'keep-alive',
-24 silly get     'x-served-by': 'cache-syd1620-SYD',
-24 silly get     'x-cache': 'MISS',
-24 silly get     'x-cache-hits': '0',
-24 silly get     'x-timer': 'S1490528590.319835,VS0,VE683',
-24 silly get     vary: 'Accept-Encoding' } ]
-25 verbose get saving aws-lambda-proxy to /Users/dan/.npm/registry.npmjs.org/aws-lambda-proxy_3Fwrite_3Dtrue/.cache.json
-26 verbose correctMkdir /Users/dan/.npm correctMkdir not in flight; initializing
-27 verbose unpublish removing attachments { shasum: '38a2d2b914d8c949096af9b4d2dfe621cb05bc48',
-27 verbose unpublish   tarball: 'https://registry.npmjs.org/aws-lambda-proxy/-/aws-lambda-proxy-0.5.0.tgz' }
-28 info unpublish No versions remain, removing entire package
-29 verbose request uri https://registry.npmjs.org/aws-lambda-proxy/-rev/13-b83ad8e3bb866af56da755031303796a
-30 verbose request sending authorization for write operation
-31 info attempt registry request try #1 at 10:43:11 PM
-32 verbose request using bearer token for auth
-33 http request DELETE https://registry.npmjs.org/aws-lambda-proxy/-rev/13-b83ad8e3bb866af56da755031303796a
-34 http 400 https://registry.npmjs.org/aws-lambda-proxy/-rev/13-b83ad8e3bb866af56da755031303796a
-35 verbose headers { 'content-type': 'application/json',
-35 verbose headers   'cache-control': 'max-age=300',
-35 verbose headers   'content-length': '17',
-35 verbose headers   'accept-ranges': 'bytes',
-35 verbose headers   date: 'Sun, 26 Mar 2017 11:43:11 GMT',
-35 verbose headers   via: '1.1 varnish',
-35 verbose headers   connection: 'keep-alive',
-35 verbose headers   'x-served-by': 'cache-syd1620-SYD',
-35 verbose headers   'x-cache': 'MISS',
-35 verbose headers   'x-cache-hits': '0',
-35 verbose headers   'x-timer': 'S1490528591.042498,VS0,VE807',
-35 verbose headers   vary: 'Accept-Encoding' }
-36 verbose request invalidating /Users/dan/.npm/registry.npmjs.org/aws-lambda-proxy on DELETE
-37 verbose stack Error: Registry returned 400 for DELETE on https://registry.npmjs.org/aws-lambda-proxy/-rev/13-b83ad8e3bb866af56da755031303796a
-37 verbose stack     at makeError (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-37 verbose stack     at CachingRegistryClient.<anonymous> (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
-37 verbose stack     at Request._callback (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-37 verbose stack     at Request.self.callback (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
-37 verbose stack     at emitTwo (events.js:106:13)
-37 verbose stack     at Request.emit (events.js:191:7)
-37 verbose stack     at Request.<anonymous> (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
-37 verbose stack     at emitOne (events.js:101:20)
-37 verbose stack     at Request.emit (events.js:188:7)
-37 verbose stack     at IncomingMessage.<anonymous> (/Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
-38 verbose statusCode 400
-39 verbose pkgid aws-lambda-proxy
-40 verbose cwd /Users/dan/code/serverless-proxy
-41 error Darwin 16.4.0
-42 error argv "/Users/dan/.nvm/versions/node/v6.5.0/bin/node" "/Users/dan/.nvm/versions/node/v6.5.0/bin/npm" "unpublish" "aws-lambda-proxy@0.5.0"
-43 error node v6.5.0
-44 error npm  v3.10.3
-45 error code E400
-46 error Registry returned 400 for DELETE on https://registry.npmjs.org/aws-lambda-proxy/-rev/13-b83ad8e3bb866af56da755031303796a
-47 error If you need help, you may report this error at:
-47 error     <https://github.com/npm/npm/issues>
-48 verbose exit [ 1, true ]
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M npm-debug.log
+5 verbose stack     at /Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/version.js:247:19
+5 verbose stack     at /Users/dan/.nvm/versions/node/v6.5.0/lib/node_modules/npm/lib/utils/no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:197:7)
+5 verbose stack     at emitTwo (events.js:106:13)
+5 verbose stack     at ChildProcess.emit (events.js:191:7)
+5 verbose stack     at maybeClose (internal/child_process.js:877:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:334:11)
+5 verbose stack     at emitOne (events.js:96:13)
+5 verbose stack     at Socket.emit (events.js:188:7)
+5 verbose stack     at Pipe._handle.close [as _onclose] (net.js:493:12)
+6 verbose cwd /Users/dan/code/serverless-proxy
+7 error Darwin 16.4.0
+8 error argv "/Users/dan/.nvm/versions/node/v6.5.0/bin/node" "/Users/dan/.nvm/versions/node/v6.5.0/bin/npm" "version" "patch"
+9 error node v6.5.0
+10 error npm  v3.10.3
+11 error Git working directory not clean.
+11 error M npm-debug.log
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
