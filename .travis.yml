@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '6.10'
+deploy:
+  provider: npm
+  email: dan.p.turner@gmail.com
+  api_key:
+    secure: LYilnil6AxTzC84gGeED7Yprm1OoJNFu+wo2GcUzGbTOIwtjDghRJvFp1hgvRUZu2mxJBfgCwvYNI6hYnZ0CcvjvhTithOD5tEbtyU1gKMujzfu/6KVUI7saYBu4dRzztIHFSjz1aAZBLD91El8aEw7WKMTXrzKf0iktZtie/a6n+OsqmnO5DnI2xtuC0mS6qNnj0JiwB2Gezd0oFpeN/k3DRNMEHto9MnQF+amtCKxa15dlLC2MWYH31j6gKk0oI47vD8R/7tCYpIwIicsLe+InQjSi0ttki7rfv9D15gU/l3jMtZ24sjvGP7AHyV5yIokcWKTay25kDXkX4qWztF9Z1aBmT+99c1vGCys+T7qpeJU3+gwHolkkL5LTVz6PTOaVFJj/AdO4kk+fHMcogQXV8rtwi1OWGSbeVEccxbj0YLSK/oDe4zdrVYe93YxZrFhxchtpmg+Rm0XpnpcBYseMyu7D2IBwMMr77VBXr+Y8h2Cwf0qzGS/ydVUC4eA0T3zbOjYnpZitXRwnTCKaz1A1peCPZkLZHPtDKbs+MYog+LilisdA+Cj1QbDMD5u+f1yrfqDOTLf2TwNlPWQs7LmMudXwvyEMB4FyOW5FuFBt07AISGnKe5x++q7znOo+nLD9FHpJkd2YugkqQuqH3HA167+SyqhToDdEwktw0cA=
+  on:
+    tags: true
+    repo: dan-turner/serverless-proxy

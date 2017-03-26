@@ -1,0 +1,34 @@
+{
+  "name": "serverless-proxy",
+  "version": "0.6.1",
+  "author": "Dan Turner <dan.p.turner@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "description": "Run your existing HTTP middleware based apps in Serverless",
+  "homepage": "https://github.com/dan-turner/serverless-proxy",
+  "bugs": {
+    "url": "https://github.com/dan-turner/serverless-proxy/issues"
+  },
+  "keywords": [
+    "serverless",
+    "proxy",
+    "aws",
+    "api",
+    "gateway",
+    "lambda",
+    "koa",
+    "express"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "dependencies": {
+    "request": "^2.34",
+    "request-promise-native": "^1.0.3"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ]
+}
