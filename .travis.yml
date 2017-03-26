@@ -1,6 +1,8 @@
 language: node_js
 node_js:
 - '6.10'
+before_script:
+- yarn global add serverless
 deploy:
   provider: npm
   email: dan.p.turner@gmail.com

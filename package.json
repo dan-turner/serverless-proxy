@@ -20,7 +20,7 @@
     "express"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "test/script.sh"
   },
   "dependencies": {
     "request": "^2.34",

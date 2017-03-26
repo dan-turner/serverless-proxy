@@ -1,0 +1,17 @@
+{
+  "resource": "/",
+  "path": "/",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "Accept-Encoding": "gzip, deflate, sdch, br",
+    "Accept-Language": "en-AU,en;q=0.8,en-US;q=0.6"
+  },
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+  },
+  "body": null,
+  "isBase64Encoded": false
+}
